@@ -1,0 +1,25 @@
+root: ./data
+tasktag: NEXTITEM
+
+maxlen: 50
+
+epochs: 200
+batch_size: 512
+optimizer: AdamW
+lr: 1.e-3
+weight_decay: 0.1 # retail: 1.
+dropout_rate: 0.2
+T: 0.07
+
+path: models/1124131243 # the directory saving a collection of pre-trained models
+ckpt_epoch: 4000 # path/model_{ckpt_epoch}.pt will be loaded
+
+# This should be modified to align with the datasets used for fine-tuning.
+sem_feat_file: sentence-t5-xl_title_categories_brand.pkl
+# sem_feat_file: sentence-t5-xl_item_name_address_city.pkl
+# sem_feat_file: sentence-t5-xl_text.pkl
+
+adaptor_only: True
+
+monitors: [LOSS, HitRate@1, HitRate@10, HitRate@20, NDCG@10, NDCG@20]
+which4best: NDCG@10

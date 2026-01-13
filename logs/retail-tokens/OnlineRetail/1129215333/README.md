@@ -1,0 +1,63 @@
+
+## 2025-11-29-21:53:40 
+
+
+|  Attribute   |   Value   |
+| :-------------: | :-----------: |
+|  adaptor_only  |   True    |
+|  batch_size  |   512    |
+|  benchmark  |   False    |
+|  BEST_FILENAME  |   best.pt    |
+|  beta1  |   0.9    |
+|  beta2  |   0.999    |
+|  CHECKPOINT_FILENAME  |   checkpoint.tar    |
+|  CHECKPOINT_FREQ  |   1    |
+|  CHECKPOINT_MODULES  |   ['model', 'optimizer', 'lr_scheduler']    |
+|  CHECKPOINT_PATH  |   ./infos/retail-tokens/OnlineRetail/2    |
+|  ckpt_epoch  |   40    |
+|  config  |   configs/finetune.yaml    |
+|  dataset  |   OnlineRetail    |
+|  DATA_DIR  |   data    |
+|  ddp_backend  |   nccl    |
+|  description  |   retail-tokens    |
+|  device  |   cuda:2    |
+|  dropout_rate  |   0.2    |
+|  early_stop_patience  |   1e+23    |
+|  epochs  |   200    |
+|  eval_freq  |   5    |
+|  eval_test  |   False    |
+|  eval_valid  |   True    |
+|  gradient_accumulation_steps  |   1    |
+|  hidden_size  |   256    |
+|  id  |   1129215333    |
+|  log2console  |   True    |
+|  log2file  |   True    |
+|  LOG_PATH  |   ./logs/retail-tokens/OnlineRetail/1129215333    |
+|  lora_alpha  |   16    |
+|  lora_dropout  |   0.1    |
+|  lora_rank  |   8    |
+|  lr  |   0.001    |
+|  maxlen  |   50    |
+|  momentum  |   0.9    |
+|  monitors  |   ['LOSS', 'HitRate@1', 'HitRate@10', 'HitRate@20', 'NDCG@10', 'NDCG@20']    |
+|  MONITOR_BEST_FILENAME  |   best.pkl    |
+|  MONITOR_FILENAME  |   monitors.pkl    |
+|  nesterov  |   False    |
+|  num_attention_heads  |   2    |
+|  num_hidden_layers  |   4    |
+|  num_workers  |   4    |
+|  optimizer  |   AdamW    |
+|  path  |   models/MPT/Amazon2014Beauty_550_LOU/1124131243    |
+|  ranking  |   full    |
+|  resume  |   False    |
+|  retain_seen  |   False    |
+|  root  |   ../data    |
+|  SAVED_FILENAME  |   model.pt    |
+|  seed  |   4    |
+|  sem_feat_file  |   sentence-t5-xl_text.pkl    |
+|  SUMMARY_DIR  |   summary    |
+|  SUMMARY_FILENAME  |   SUMMARY.md    |
+|  T  |   0.07    |
+|  tasktag  |   TaskTags.NEXTITEM    |
+|  weight_decay  |   1.0    |
+|  which4best  |   NDCG@10    |
