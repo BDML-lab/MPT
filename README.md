@@ -3,12 +3,25 @@
   <img src="assets/logo.png" alt="Logo">
 </div>
 
+**Markovian Pre-trained Transformer for Next-Item Recommendation:** ✅ 100% pre-trained on synthetic Markov chains; ✅ better transferability.
+
+<div align="center">
+  <img src="assets/vs.png" alt="VS">
+</div>
+
+
 <h5 align="center">
     <p>
         <a href="">Paper</a> |
-        <a href="">Slide</a>
+        <a href="https://www.mtandhj.com/slides/mpt/">Slide</a>
     </p>
 </h4>
+
+## 📊 Experimental Results
+
+<div align="center">
+  <img src="assets/results.png" alt="results">
+</div>
 
 
 
@@ -23,7 +36,7 @@
     </p>
 </h4>
 
-## 🌟 Usage
+## 🚀 Usage
 
 
 ```
@@ -52,7 +65,7 @@
 
 
 <div align="center">
-  <img src="assets/overview.png" alt="Logo">
+  <img src="assets/overview.png" alt="overview">
 </div>
 
 ### Markovian Pre-Training
@@ -65,9 +78,13 @@
 
 ### Recommendation Fine-Tuning
 
+- **Adaptor:**
 
     python finetune.py --config configs/finetune.yaml --dataset Amazon2014Beauty_550_LOU --path logs/...
 
+- **+LoRA:**
+
+    python finetune.py --config configs/finetune.yaml --adaptor-only False --dataset Amazon2014Beauty_550_LOU --path logs/...
 
 > [!NOTE]
 > To reproduce the results presented in the paper, one should follow the steps outlined in [data/README.md](data/README.md) and [models/README.md](models/README.md) to download the processed datasets and pre-trained models.
