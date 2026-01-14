@@ -12,7 +12,7 @@
 
 <h5 align="center">
     <p>
-        <a href="">Paper</a> |
+        <a href="https://arxiv.org/abs/2601.08275">Paper</a> |
         <a href="https://www.mtandhj.com/slides/mpt/">Slide</a>
     </p>
 </h4>
@@ -32,7 +32,7 @@
         Python == 3.10.18</a> |
         <a href="https://pytorch.org/">PyTorch == 2.5.1</a> |
         <a href="https://github.com/huggingface/transformers.git">Transformer == 4.56.2</a> |
-        <a href="">FreeRec == 0.9.5</a>
+        <a href="https://github.com/MTandHJ/freerec">FreeRec == 0.9.5</a>
     </p>
 </h4>
 
@@ -99,7 +99,7 @@
 @article{xu2025mpt,
   title={Markovian Pre-Trained Transformer for Next-Item Recommendation},
   author={Xu, Cong and Li, Guoliang and Wang, Jun and Zhang, Wei},
-  journal={},
+  journal={arXiv preprint arXiv:2601.08275},
   year={2026}
 }
 ```
