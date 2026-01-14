@@ -80,11 +80,15 @@
 
 - **Adaptor:**
 
+```
     python finetune.py --config configs/finetune.yaml --dataset Amazon2014Beauty_550_LOU --path logs/...
+```
 
 - **+LoRA:**
 
+```
     python finetune.py --config configs/finetune.yaml --adaptor-only False --dataset Amazon2014Beauty_550_LOU --path logs/...
+```
 
 > [!NOTE]
 > To reproduce the results presented in the paper, one should follow the steps outlined in [data/README.md](data/README.md) and [models/README.md](models/README.md) to download the processed datasets and pre-trained models.
@@ -97,7 +101,7 @@
 
 ```
 @article{xu2025mpt,
-  title={Markovian Pre-Trained Transformer for Next-Item Recommendation},
+  title={Markovian pre-trained transformer for next-item recommendation},
   author={Xu, Cong and Li, Guoliang and Wang, Jun and Zhang, Wei},
   journal={arXiv preprint arXiv:2601.08275},
   year={2026}
